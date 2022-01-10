@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*  Small/Mobile Media de 768px pra baixo */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  ul {
+    list-style: none; 
+  }
+}
+
+/* Medium Media entre 768px a 1199px */
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+    body {
+        background-color: green;
+      }
+}
+
+/* Large Media de 1200px pra cima */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: blue;
+      }
+}
