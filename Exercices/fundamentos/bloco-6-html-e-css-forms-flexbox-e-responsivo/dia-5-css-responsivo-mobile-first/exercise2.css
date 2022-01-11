@@ -7,27 +7,69 @@ html {
 *:after {
   box-sizing: inherit;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero, .aside-one h2, .aside-two h2, h1 {
+  font-family: 'Dancing Script', cursive;
+}
+ul {
+  list-style: none; 
+}
+.main-content h1{
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*  Small/Mobile Media de 768px pra baixo */
 @media screen and (max-width: 768px) {
   body {
     background-color: red;
   }
-  .container {
+  .hero{
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height: 120px;
+    border: 2px solid black;
+  }
+  .hero p {
+    font-size: xxx-large;
+    margin-right: 10%;
+  }
+  nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
   }
-  .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+  nav ul li {
+    display: flex;
+    padding-right: 15px;
   }
-  ul {
-    list-style: none; 
+  .home {
+    display: flex;
   }
+  .about {
+    display: flex;
+  }
+  .contact {
+    display: flex;
+  }
+
 }
 
 /* Medium Media entre 768px a 1199px */
